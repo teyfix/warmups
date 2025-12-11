@@ -2,6 +2,7 @@ import "@/theme/globals.css";
 
 import type { Metadata } from "next";
 import { fontMono, fontSans } from "@/theme/fonts";
+import { Providers } from "./root/providers";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,7 @@ export function RootLayout({
   return (
     <html lang="en">
       <body className={`${fontSans.variable} ${fontMono.variable} antialiased`}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

@@ -10,9 +10,11 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.11.1",
     "next": "16.0.9",
     "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "react-dom": "19.2.1",
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
