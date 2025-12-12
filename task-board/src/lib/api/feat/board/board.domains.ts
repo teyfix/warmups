@@ -3,7 +3,9 @@ import { createInsertDomain, createViewDomain } from "@/db/utils";
 import { ListMetaDomain, ListQuery } from "../_shared/shared.domains";
 import { boardsTable, boardsView } from "./board.schemas";
 
-export const CreateBoardDomain = createInsertDomain(boardsTable);
+export const CreateBoardDomain = createInsertDomain(boardsTable).extend({
+  name: z.string().trim().nonempty(),
+});
 
 export type CreateBoardModel = z.infer<typeof CreateBoardDomain>;
 
