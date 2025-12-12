@@ -1,5 +1,3 @@
-import * as pg from "drizzle-orm/pg-core";
+export { taskBoard } from "@/lib/api/feat/_shared/shared.schemas";
 
-export { pg };
-
-export const taskBoard = pg.pgSchema("task_board");
+export { boardsTable, boardsView } from "@/lib/api/feat/board/board.schemas";

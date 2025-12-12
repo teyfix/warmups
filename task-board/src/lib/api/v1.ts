@@ -10,4 +10,5 @@ export const v1 = new Elysia({ prefix: "/api/v1" })
       },
     })
   )
+  .use(import("./feat/board/boards.controller"))
   .use(import("./feat/counter/counter.controller"));

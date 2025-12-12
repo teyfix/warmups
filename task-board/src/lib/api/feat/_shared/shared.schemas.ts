@@ -1,6 +1,10 @@
 import { sql } from "drizzle-orm";
+import * as pg from "drizzle-orm/pg-core";
 import { isoTimestamp } from "@/db/custom/iso-timestamp";
-import { pg } from "@/db/schema";
+
+export { pg };
+
+export const taskBoard = pg.pgSchema("task_board");
 
 export const NULL = sql<null>`null`;
 
