@@ -1,3 +1,5 @@
-import * as d from "drizzle-orm/pg-core";
+import * as pg from "drizzle-orm/pg-core";
 
-export const taskBoard = d.pgSchema("task_board");
+export { pg };
+
+export const taskBoard = pg.pgSchema("task_board");
